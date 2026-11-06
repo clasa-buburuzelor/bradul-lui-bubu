@@ -776,14 +776,14 @@
         c.textAlign = 'center';
         c.fillStyle = dark ? '#fff4c2' : '#0f3d2e';
         c.font = '800 64px "Baloo 2", sans-serif';
-        c.fillText('Bradul nostru de Crăciun', W / 2, 82);
+        c.fillText('Bradul lui Bubu', W / 2, 82);
         c.font = '700 44px "Baloo 2", sans-serif';
         c.fillText('Crăciun fericit! ' + new Date().getFullYear(), W / 2, H - 40);
         canvas.toBlob(blob => {
           if (!blob) { toast(MSG.photoFailed); return; }
           const a = document.createElement('a');
           a.href = URL.createObjectURL(blob);
-          a.download = 'bradul-nostru-de-craciun.png';
+          a.download = 'bradul-lui-bubu.png';
           document.body.appendChild(a);
           a.click();
           a.remove();
